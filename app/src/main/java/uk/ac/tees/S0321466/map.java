@@ -58,7 +58,7 @@ public class map extends AppCompatActivity implements GoogleMap.OnMyLocationButt
     };
 
     private Location lastKnownLocation;
-    private float DEFAULT_ZOOM = 12;
+    private float DEFAULT_ZOOM = 13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,7 +115,6 @@ public class map extends AppCompatActivity implements GoogleMap.OnMyLocationButt
                         lastKnownLocation = task.getResult();
                         if (lastKnownLocation != null) {
                             //LatLng _dummy = new LatLng(54.5742982466006, -1.2349123090100282);
-
                             //_map.addMarker(new MarkerOptions().position(_dummy).title("My Location234"));
                            _map.addMarker(new MarkerOptions().position(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude())).title("My Location"));
 

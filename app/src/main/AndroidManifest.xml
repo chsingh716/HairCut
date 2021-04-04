@@ -13,20 +13,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 
-<!--    The Api key is used to access map releated data from google server.-->
-<!--
-we are going to store API key in res/value/google_API.xml file
--->
-<!--    <meta-data-->
-<!--        android:name="com.google.android.geo.API_KEY"-->
-<!--        android:value="AIzaSyDLJ5AoArpYWUeb3q84P0OftnHk5yZR788"/>-->
-
-<!--    <meta-data-->
-<!--        android:name="com.google.android.geo.API_KEY"-->
-<!--        android:value="AIzaSyDLJ5AoArpYWUeb3q84P0OftnHk5yZR788" />-->
-
-<!--    <meta-data android:name="com.google.android.maps.v2.API_KEY"-->
-<!--        android:value="AIzaSyDLJ5AoArpYWUeb3q84P0OftnHk5yZR788" />-->
 
     <application
 
@@ -56,9 +42,13 @@ we are going to store API key in res/value/google_API.xml file
             </intent-filter>
         </activity>
 
+        <!--    The Api key is used to access map releated data from google server.-->
+        <!--
+        we are going to store API key in res/value/google_API.xml file
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDLJ5AoArpYWUeb3q84P0OftnHk5yZR788" />
+            android:value="@string/MAP_API_KEY" />
     </application>
 
 </manifest>

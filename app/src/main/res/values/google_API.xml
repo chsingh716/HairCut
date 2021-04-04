@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <!--
+TODO: I need Google Maps API key before run this application.
 Now we can accss API key in our project by using MAP_API_KEY name/parameter
 To get the API key login to developer.google.com website.
 Login to the above website and after getting API key insert below.
