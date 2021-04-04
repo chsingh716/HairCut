@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+Now we can accss API key in our project by using MAP_API_KEY name/parameter
+To get the API key login to developer.google.com website.
+Login to the above website and after getting API key insert below.
+-->
+    <string name="MAP_API_KEY" templateMergeStrategy="preserve" translatable="false">AIzaSyDLJ5AoArpYWUeb3q84P0OftnHk5yZR788</string>
+</resources>

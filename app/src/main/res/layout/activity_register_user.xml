@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".registerUser">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_avatar"
+        android:id="@+id/userImage"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImage"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_30">
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:inputType="textPersonName|textNoSuggestions"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="First Name"
+
+            />
+
+        <EditText
+
+            android:id="@+id/et_last_name"
+            android:inputType="textPersonName|textNoSuggestions"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Last Name"
+            />
+
+        <EditText
+
+            android:id="@+id/et_email"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:hint="Email"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            />
+        <TextView
+            android:id="@+id/tv_dob"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:hint="Date of Birth"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:hint="Location"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+      <com.hbb20.CountryCodePicker
+          android:id="@+id/cpp_countryCode"
+          app:ccp_textSize="14sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"
+          android:gravity="center_vertical"
+          android:minHeight="40dp"
+          app:ccp_defaultNameCode="GB"
+          app:ccp_autoDetectLanguage="true"
+          android:background="@drawable/et_round1"
+          />
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditTextStyle"
+            android:drawableTint="@color/gray5"
+            android:drawableStart="@drawable/ic_baseline_call_24"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+        />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/size_15dp"
+            android:padding="15dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_userlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Register? Login here"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_adminlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ohh, I am Stylist, not a Customer"
+            android:textColor="@android:color/holo_red_light"
+            />
+    </LinearLayout>
+
+<!--            android:padding="20dp"-->
+<!--            android:backgroundTint="@color/Moccasin"-->
+
+
+
+</RelativeLayout>
